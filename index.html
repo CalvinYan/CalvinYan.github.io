@@ -24,12 +24,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjEuNWRHWFIAAAGfSURBVDhPY2CodyMNofNxIJZGD55WPxAbWRQrcl5Qtv7a0fffPulOTQeJIMtBEEuDR+jK5pmnt154fsdidv6+e+f/////7NNbRogCFKWNHl1HVp15ehOoGqgICD58//Lj908gY/GFPVBlcNUMda4dh1dA1G24drTlwFIIGwIS1nej2lDnCvTT15/fgXKH711ib/IGCrYcXAZRDQTSPVFQlVCq3s1weiZELrm+iMFQGmgEUBDodKDI1ZcPoMYjNBTbq0yMh2hoampiAAJDaeUJUJGJx9dDlUE1AA0zkmGsd7/5+jFQ+tu3b8nJyfKKivnrJ0E0+C6tQ9WQYs4gwg1keC+p+fPvL0TR998/t946BWT8/P2LpzUAVUO4AcgNGVYgPUtrrr9+BFS3687ZVVcOlu+eoz89A6EaqiHdAqRBhp+hyhkiyl/uwZJqCVVRD/I9AoEw0A8SvCA9YjwMYfoM+bYMXhoMjioMSsIMpQ4oqoEISmVaMnCxgvQAgRQfAz8HiKEohFAHRwhWkR2DlQKDsjCDpwZDgA6IC5eCo3o3AAK+MHsuqdTvAAAAAElFTkSuQmCC" rel="icon" type="image/x-icon" /> -->
-    <!-- Custom CSS for body padding-->
-    <style>
-        body { padding-top: 72px; }
-        a i { color: inherit; }
-    </style>
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="./style.css">
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -53,7 +50,7 @@
                 <ul class="nav nav-pills navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+                        <a class="nav-link dropdown-toggle" href="#project-grid" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
                         <div class="dropdown-menu text-white bg-dark" aria-labelledby="projectsDropdown">
                             
                         </div>
@@ -63,40 +60,98 @@
             </div>
         </div>
     </nav>
-    <!-- Header image -->
-    <img src="./images/me.jpg" class="img-fluid">
-    <!-- Main page content -->
-    <div class="container-fluid">
-        <div class="py-5 row featurette bg-success" id="about">
-            <div class="col-lg-4">
-                <img class="mx-5 img-thumbnail featurette-image img-fluid rounded-circle pull-left" src="./images/portrait.jpg">
+    <div class="background-header">
+        <div class="row">
+            <div class="col"></div>
+            <div class="py-4 col-lg-4 text-center">
+                <img class="img-thumbnail rounded-circle text-center portrait" src="./images/portrait.jpg">
+                <h1 class="text-white">Calvin Yan</h1>
+                <p class="text-white lead">
+                    Computer science student, UC Berkeley class of 2023, data journalism enthusiast, budding jazzhead, unpaid Adidas track pants model
+                </p>
+                <hr>
+                <span class="icons">
+                    <a class="btn" target="_blank" href="mailto:calviny524@gmail.com"><i class="icon fa fa-lg fa-envelope text-white"></i></a>
+                    <a class="btn" target="_blank" href="https://github.com/CalvinYan"><i class="icon fa fa-lg fa-github text-white"></i></a>
+                    <a class="btn" target="_blank" href="./images/resume.pdf"><i class="icon fa fa-lg fa-file-pdf-o text-white"></i></a>
+                    <a class="btn" target="_blank" href="https://www.linkedin.com/in/calvin-yan-61696b167/"><i class="icon fa fa-lg fa-linkedin text-white"></i></a>
+                    <a class="btn" target="_blank" href="https://www.facebook.com/calv1n.yan"><i class="icon fa fa-lg fa-facebook text-white"></i></a>
+                </span>
             </div>
-            <div class="col-lg-8">
-                <h1 class="text-white display-4">
+            <div class="col"></div>
+        </div>
+        <div class="row text-white" id="about">
+            <div class="col"></div>
+            <div class="col-lg-8 text-center">
+                <h1 class="display-4">
                     About me
                 </h1>
                 <br>
-                <p class="text-white lead">
+                <p class="lead">
+                    
                     I'm a high school student in the Palo Alto High School class of 2019. Programmer, proud
                     member of FIRST Robotics Competition Team 8, USACO Club founder and president, and
                     something of a USACO Platinum competitor myself. I also dabble in journalism, being the
                     founding digital editor of Veritas Magazine.
                 </p>
             </div>
-            
+            <div class="col"></div>
         </div>
-        <div class="py-5 row featurette text-white bg-dark text-center" id="contact">
-            <div class="col-lg-12">
-                <h2>
-                    Places you can find me
-                </h2>
-                <div class="icons color-1">
-                    <a class="btn" href="mailto:calviny524@gmail.com"><i class="icon fa fa-lg fa-envelope"></i></a>
-                    <a class="btn" href="https://github.com/CalvinYan"><i class="icon fa fa-lg fa-github"></i></a>
-                    <a class="btn" href="https://www.linkedin.com/in/calvin-yan-61696b167/"><i class="icon fa fa-lg fa-linkedin"></i></a>
-                    <a class="btn" href="https://www.facebook.com/calv1n.yan"><i class="icon fa fa-lg fa-facebook"></i></a>
+    </div>
+    <!-- Main page content -->
+    <div class="container-fluid">
+        <div class="py-5 row featurette" id="projects">
+            <span class="text-center container-fluid">
+                <h1 class="display-4">
+                    Stuff I've worked on
+                </h1>
+            </span>
+            <!-- Project grid -->
+            <!-- <div class="col-lg-4 text-center"> -->
+            <section class="project-grid row container-fluid">
+                <div class="col-lg-4">
+                    <div class="project" style="background-image:url(./images/veritas.jpg)">
+                        <div class="overlay">
+                            <a target="_blank" href="https://palyveritas.com"><h3 class="project-title py-3">Veritas Magazine</h3></a>
+                            <p>
+                                A Wordpress site for our high school science publication Veritas.
+                            </p>
+                            <p>
+                                Status: <span class="project-ongoing">ONGOING</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="col-lg-4">
+                    <div class="project" style="background-image:url(./images/team8vision.jpg)">
+                        <div class="overlay">
+                            <a target="_blank" href="https://github.com/team8/2017-vision-app"><h3 class="project-title py-3">Team 8 Vision</h3></a>
+                            <p>
+                                A computer vision Android app for use by FIRST Robotics Competition Team 8's 2017 robot.
+                                Utilizes OpenCV to identify retroreflective tape and estimate horizontal displacement.
+                            </p>
+                            <p>
+                                Status: <span class="project-complete">COMPLETE</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="project" style="background-image:url(./images/spinvaders.jpg)">
+                        <div class="overlay">
+                            <a href="./projects/geniushour.html"><h3 class="project-title py-3">Genius Hour</h3></a>
+                            <p>
+                                A small Flash shoot-em-up I made in eighth grade and presented to our science class's
+                                "Genius Hour" project.
+                            </p>
+                            <p>
+                                Status: <span class="project-complete">COMPLETE</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- </div> -->
         </div>
     </div>
     

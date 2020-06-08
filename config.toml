@@ -1,0 +1,4 @@
+baseURL = "https://calvinyan.github.io/"
+languageCode = "en-us"
+title = "Calvin Yan"
+theme = "ananke"

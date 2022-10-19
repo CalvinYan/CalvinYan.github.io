@@ -1,0 +1,11 @@
+html {
+    background: #333;
+}
+
+.menu {
+    margin: 0% 20%;
+    padding: 10% 20%;
+    background: #F2E8CF;
+    filter: drop-shadow(5px 5px 5px #000)
+}
+

@@ -1,11 +1,86 @@
 html {
-    background: #333;
+    background: #FFF;
+    font-size: 14px;
 }
 
 .menu {
     margin: 0% 20%;
-    padding: 10% 20%;
+    padding: 120px 5% 5% 5%;
     background: #F2E8CF;
-    filter: drop-shadow(5px 5px 5px #000)
+    filter: drop-shadow(0px 2px 2px #555)
 }
 
+h1 {
+    color: #BC4749;
+    font-family: 'Oswald';
+    font-size: 44px;
+}
+
+
+h2 {
+    color: #386641;
+    font-family: 'Oswald';
+    font-size: 28px;
+}
+
+hr {
+    height: 5px;
+    border-bottom: 1px dotted #386641;
+    border-top: 2px solid #386641;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    margin: 5px 0px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.item {
+    font-family: 'Oswald';
+    font-size: 14px;
+    color: #333;
+}
+
+.item.name {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #6A994E;
+}
+
+.item.price {
+    font-weight: bolder;
+}
+
+.pastas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column {
+    padding: 10px;
+}
+
+.column.one {
+    background: #6A994E;
+}
+
+/* .column.two { */
+    /* background: #BC4749; */
+/* } */
+
+.column.three {
+    background: #BC4749;
+}
+
+.column:nth-child(odd) h2 {
+    color: #FFF;
+}
+
+.column:nth-child(odd) .item {
+    color: #FFF;
+}

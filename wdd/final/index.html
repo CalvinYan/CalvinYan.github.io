@@ -1,6 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        FINAL
-    </body>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+    <!-- Favicon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carter+One">
+</head>
+<body>
+    <title>Mahjong Madness</title>
+    <div id="centerpiece">
+        <img id="logo" src="assets/img/logo.png">
+        Mahjong Madness
+    </div>
+    <!-- <img id="logo" src="assets/img/logo.png"> -->
+    <div id="lighting"></div>
+    
+    <div id="nav">
+        <div class="option">
+            <a href="./">PROFILE</a>
+        </div>
+        <a href="./">ABOUT</a>
+        <a href="./">LOG IN</a>
+    </div>
+    <div id="panel">
+        <div>
+            <div id="rules">Game mode: Hong Kong</div>
+            <button id="changerules">Change ruleset</button>
+        </div>
+        <button id="join">Join a private room</button>
+        <button id="host">Host a private room</button>
+        <button id="play">Go!</button>
+    </div>
+    <div class="hidden" id="shader"></div>
+    <script src="assets/js/script.js"></script>
+</body>
 </html>

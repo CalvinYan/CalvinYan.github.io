@@ -26,7 +26,41 @@
     width: 100vw;
     height: 100vh;
     z-index: -100;
-    opacity: 0.3;
+    opacity: 0.2;
+}
+
+#logo1 {
+    max-width: 30vw;
+    max-height: 30vh;
+    animation: 1s ease-in-out infinite hover1;
+}
+
+#logo2 {
+    max-width: 30vw;
+    max-height: 30vh;
+    animation: 1s ease-in-out infinite hover2;
+}
+
+.logo {
+    position: relative;
+}
+
+@keyframes hover1 {
+    0%, 100% {
+        bottom: 0%;
+    }
+    50% {
+        bottom: 60%
+    }
+}
+
+@keyframes hover2 {
+    0%, 100% {
+        bottom: 75%;
+    }
+    50% {
+        bottom: 15%
+    }
 }
 
 #logo {
@@ -135,7 +169,14 @@
 }
 
 #play:hover {
-    background-color: #01b701;
+    background-color: #00b700;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
@@ -163,7 +204,9 @@ button:active {
 }
 
 html {
-    background-color: #016E32;
+    /* background-color: #016E32; */
+    /* background-color: #00a64b; */
+    background-color: #00683d;
     
     /* transition: cubic-bezier(.15, .93, .36, 1) 1s; */
 }

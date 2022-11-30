@@ -25,4 +25,23 @@ play.onclick = function () {
     
     centerpiece = document.getElementById("centerpiece");
     centerpiece.style.opacity = 0;
+
+    tiles = document.getElementsByClassName("tile");
+
+    for (var i = 0; i < tiles.length; i++) {
+        tile = tiles[i];
+
+        roll = Math.floor(Math.random() * 3);
+        if (roll == 0) {
+            tile.src = "assets/img/7bing.png";
+        }        
+        if (roll == 1) {
+            tile.src = "assets/img/8tiao.png";
+        }        
+        if (roll == 2) {
+            tile.src = "assets/img/9wan.png";
+        }        
+        tile.style.transform = "none";
+        tile.style.animationDelay = "5s";
+    }
 };

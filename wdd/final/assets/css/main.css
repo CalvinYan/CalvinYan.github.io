@@ -168,6 +168,20 @@
     background-color: #00b700;
 }
 
+#hand {
+    position: absolute;
+    bottom: 0px;
+}
+
+.tile {
+    max-width: 10vw;
+    transform: translateY(100%);
+}
+
+.tile:hover {
+    transform: translateY(-20%);
+}
+
 .row {
     display: flex;
     flex-direction: row;

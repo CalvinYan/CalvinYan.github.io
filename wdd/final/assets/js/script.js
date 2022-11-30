@@ -21,5 +21,8 @@ play = document.getElementById("play");
 
 play.onclick = function () {
     panel = document.getElementById("panel");
-    panel.style.transform = "translateX(100)";
+    panel.style.transform = "translateX(500px)";
+    
+    centerpiece = document.getElementById("centerpiece");
+    centerpiece.style.opacity = 0;
 };
